@@ -2,20 +2,23 @@
   "name": "credit-risk-be",
   "version": "1.0.0",
   "main": "index.js",
- 
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "seed": "node src/seed.js"
   },
   "keywords": [],
   "author": "Mohamed Desoky",
   "license": "ISC",
   "description": "Backend server for credit risk assessment app using Node.js and Express",
   "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
